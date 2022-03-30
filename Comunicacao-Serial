@@ -1,0 +1,13 @@
+```py
+import serial
+porta = "COM6"
+velocidade = 9600
+conexao = serial.Serial(porta, velocidade)
+while True:
+    opcao = input('Digite: ')
+    if opcao == "on":
+        conexao.write (b'Z')
+    if opcao == "off":
+        conexao.write (b'z')
+conexao.close()
+```
