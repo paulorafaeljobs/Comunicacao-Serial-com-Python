@@ -1,4 +1,3 @@
-```py
 import serial
 porta = "COM6"
 velocidade = 9600
@@ -10,4 +9,3 @@ while True:
     if opcao == "off":
         conexao.write (b'z')
 conexao.close()
-```
